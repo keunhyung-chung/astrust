@@ -17,6 +17,7 @@
 	"customizations": {
 		"vscode": {
 		  "extensions": [
+			"bierner.emojisense",
 			"davidanson.vscode-markdownlint",
 			"eamodio.gitlens",
 			"editorconfig.editorconfig",
