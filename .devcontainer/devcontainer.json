@@ -37,14 +37,7 @@
 			"ms-azuretools.vscode-docker",
 			"streetsidesoftware.code-spell-checker",
 			"yzhang.markdown-all-in-one"
-		  ],
-		  "settings": {
-			"python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
-			"black-formatter.path": ["/usr/local/py-utils/bin/black"],
-			"pylint.path": ["/usr/local/py-utils/bin/pylint"],
-			"flake8.path": ["/usr/local/py-utils/bin/flake8"],
-			"isort.path": ["/usr/local/py-utils/bin/isort"]
-		  }
+		  ]
 		}
 	  }
 }
