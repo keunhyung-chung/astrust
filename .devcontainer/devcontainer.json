@@ -20,7 +20,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5432],
 
-	"postCreateCommand": "rustc --version",
+	"postCreateCommand": ".devcontainer/post-create-commands.sh",
 
 	"customizations": {
 		"vscode": {
