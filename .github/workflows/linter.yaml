@@ -1,0 +1,9 @@
+---
+name: Lint Code Base
+on: pull_request
+jobs:
+  super-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Super-Linter
+        uses: super-linter/super-linter@v5.3.1
