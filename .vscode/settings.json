@@ -16,6 +16,7 @@
   ],
   "editor.formatOnSave": true,
   "git.branchProtection": ["main"],
+  "rust-analyzer.check.command": "clippy",
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
