@@ -1,1 +1,1 @@
-# astrust
+# ASTRUST: AI Stock Trading with 🦀 RUST
