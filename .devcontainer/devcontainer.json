@@ -38,23 +38,7 @@
         "ms-azuretools.vscode-docker",
         "streetsidesoftware.code-spell-checker",
         "yzhang.markdown-all-in-one"
-      ],
-      "settings": {
-        "editor.formatOnSave": true,
-        "git.branchProtection": ["main"],
-        "[json]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[jsonc]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[markdown]": {
-          "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-        },
-        "[yaml]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        }
-      }
+      ]
     }
   }
 }
