@@ -16,6 +16,9 @@
   ],
   "editor.formatOnSave": true,
   "git.branchProtection": ["main"],
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
