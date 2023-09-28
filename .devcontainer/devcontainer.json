@@ -1,46 +1,59 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/rust-postgres
 {
-	"name": "Rust and PostgreSQL",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "name": "Rust and PostgreSQL",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-			"packages": "bat"
-		  },
-		  "ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {
-			"packages": "eza"
-		  },
-		  "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
-	},
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+      "packages": "bat"
+    },
+    "ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {
+      "packages": "eza"
+    },
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+  },
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5432],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [5432],
 
-	"postCreateCommand": ".devcontainer/post-create-commands.sh",
+  "postCreateCommand": ".devcontainer/post-create-commands.sh",
 
-	"customizations": {
-		"vscode": {
-		  "extensions": [
-			"bierner.emojisense",
-			"davidanson.vscode-markdownlint",
-			"eamodio.gitlens",
-			"editorconfig.editorconfig",
-			"esbenp.prettier-vscode",
-			"foxundermoon.shell-format",
-			"github.copilot-chat",
-			"GitHub.copilot",
-			"github.vscode-github-actions",
-			"github.vscode-pull-request-github",
-			"ms-azuretools.vscode-docker",
-			"streetsidesoftware.code-spell-checker",
-			"yzhang.markdown-all-in-one"
-		  ],
-		  "settings": {
-			"editor.formatOnSave": true
-		}
-	  }
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bierner.emojisense",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "github.copilot-chat",
+        "GitHub.copilot",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
 }
