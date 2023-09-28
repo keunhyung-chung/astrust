@@ -1,0 +1,36 @@
+{
+  "cSpell.words": [
+    "ASTRUST",
+    "azuretools",
+    "bierner",
+    "binstall",
+    "davidanson",
+    "devcontainer",
+    "devcontainers",
+    "eamodio",
+    "emojisense",
+    "esbenp",
+    "foxundermoon",
+    "markdownlint",
+    "rustc",
+    "yzhang"
+  ],
+  "editor.formatOnSave": true,
+  "git.branchProtection": ["main"],
+  "rust-analyzer.check.command": "clippy",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
