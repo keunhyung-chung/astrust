@@ -38,7 +38,9 @@
 			"ms-azuretools.vscode-docker",
 			"streetsidesoftware.code-spell-checker",
 			"yzhang.markdown-all-in-one"
-		  ]
+		  ],
+		  "settings": {
+			"editor.formatOnSave": true
 		}
 	  }
 }
