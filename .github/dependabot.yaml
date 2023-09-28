@@ -6,6 +6,12 @@
 
 version: 2
 updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - keunhyung-chung
   - package-ecosystem: "docker"
     directory: "/.devcontainer"
     schedule:
