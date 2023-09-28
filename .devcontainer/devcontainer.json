@@ -41,6 +41,7 @@
       ],
       "settings": {
         "editor.formatOnSave": true,
+        "git.branchProtection": ["main"],
         "[json]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
