@@ -27,3 +27,10 @@ repos:
         args:
           - --config=.markdownlint.yaml
           - --fix # Fix basic errors.
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint
+        args:
+          - --config=.hadolint.yaml
