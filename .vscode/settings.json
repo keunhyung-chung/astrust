@@ -36,5 +36,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "hadolint.cliOptions": ["--no-color", "--config", ".hadolint.yaml"]
+  "hadolint.cliOptions": ["--no-color", "--config=.hadolint.yaml"]
 }
