@@ -51,7 +51,10 @@ overrides:
   - files:
       - "*.json"
     extends:
-      - plugin:json/recommended-with-comments
+      - plugin:jsonc/recommended-with-jsonc
+    parser: jsonc-eslint-parser
+    parserOptions:
+      jsonSyntax: JSON
 
   # JSONC files
   - files:
