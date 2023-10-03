@@ -18,6 +18,7 @@ jobs:
       - name: Super-Linter
         uses: super-linter/super-linter@v5.3.1
         env:
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # https://github.com/super-linter/super-linter/blob/main/docs/using-rules-files.md
