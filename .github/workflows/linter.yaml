@@ -24,3 +24,4 @@ jobs:
           # https://github.com/super-linter/super-linter/blob/main/docs/using-rules-files.md
           LINTER_RULES_PATH: /
           DOCKERFILE_HADOLINT_FILE_NAME: .hadolint.yaml
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
