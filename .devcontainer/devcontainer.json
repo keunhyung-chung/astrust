@@ -12,7 +12,7 @@
       "packages": "bat"
     },
     "ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {
-      "packages": "eza"
+      "packages": "dotenv-linter,eza"
     },
     "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
   },
