@@ -1,4 +1,8 @@
 ---
+ci:
+  # Skip hadolint in pre-commit CI because it requires hadolint executable.
+  skip: [hadolint]
+
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
