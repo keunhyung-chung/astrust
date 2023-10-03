@@ -54,7 +54,7 @@ overrides:
       - plugin:jsonc/recommended-with-jsonc
     parser: jsonc-eslint-parser
     parserOptions:
-      jsonSyntax: JSON
+      jsonSyntax: JSONC
 
   # JSONC files
   - files:
