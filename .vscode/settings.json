@@ -7,17 +7,25 @@
     "davidanson",
     "devcontainer",
     "devcontainers",
+    "dotenv",
     "eamodio",
     "emojisense",
     "esbenp",
+    "exiasr",
     "foxundermoon",
+    "hadolint",
+    "keunhyung",
     "markdownlint",
     "rustc",
     "yzhang"
   ],
   "editor.formatOnSave": true,
   "git.branchProtection": ["main"],
+  "hadolint.cliOptions": ["--no-color", "--config=.hadolint.yaml"],
   "rust-analyzer.check.command": "clippy",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

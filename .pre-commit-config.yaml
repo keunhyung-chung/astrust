@@ -1,4 +1,10 @@
 ---
+ci:
+  # Skip hadolint in pre-commit CI because it requires hadolint executable.
+  skip:
+    - dotenv-linter
+    - hadolint
+
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
@@ -27,3 +33,18 @@ repos:
         args:
           - --config=.markdownlint.yaml
           - --fix # Fix basic errors.
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.1-beta
+    hooks:
+      - id: hadolint
+        args:
+          - --config=.hadolint.yaml
+
+  - repo: local
+    hooks:
+      - id: dotenv-linter
+        name: dotenv-linter
+        entry: dotenv-linter
+        language: system
+        files: \.env$

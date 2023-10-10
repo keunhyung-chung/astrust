@@ -4,6 +4,23 @@ on: pull_request
 jobs:
   super-linter:
     runs-on: ubuntu-latest
+
+    # Grant status permission for MULTI_STATUS.
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
       - name: Super-Linter
         uses: super-linter/super-linter@v5.3.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # https://github.com/super-linter/super-linter/blob/main/docs/using-rules-files.md
+          LINTER_RULES_PATH: /
+          DOCKERFILE_HADOLINT_FILE_NAME: .hadolint.yaml
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yaml
