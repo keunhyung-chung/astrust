@@ -3,3 +3,14 @@ env:
 parserOptions:
   ecmaVersion: latest
 rules: {}
+ignorePatterns:
+  - "!.*"
+  - "**/node_modules/.*"
+overrides:
+  - files:
+      - "*.json"
+    extends:
+      - plugin:jsonc/recommended-with-json
+    parser: jsonc-eslint-parser
+    parserOptions:
+      jsonSyntax: JSON
