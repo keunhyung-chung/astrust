@@ -19,10 +19,18 @@
     "rustc",
     "yzhang"
   ],
+
   "editor.formatOnSave": true,
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
   "git.branchProtection": ["main"],
+
   "hadolint.cliOptions": ["--no-color", "--config=.hadolint.yaml"],
+
   "rust-analyzer.check.command": "clippy",
+
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
